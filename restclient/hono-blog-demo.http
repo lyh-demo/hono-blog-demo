@@ -1,0 +1,30 @@
+###
+GET http://127.0.0.1:8787/api/posts
+
+###
+GET http://127.0.0.1:8787/api/posts/6b329933-aa81-4459-a627-9415e28cdb6b
+
+###
+POST http://127.0.0.1:8787/api/posts
+Content-Type: application/json
+Authorization: Basic lyh:liuyuhe
+
+{
+    "title": "hono-blog-demo",
+    "body": "hello,world!"
+}
+
+###
+PUT http://127.0.0.1:8787/api/posts/6b329933-aa81-4459-a627-9415e28cdb6b
+Content-Type: application/json
+Authorization: Basic lyh:liuyuhe
+
+{
+    "title": "hono-blog-demo",
+    "body": "hello,hono!"
+}
+
+###
+DELETE http://127.0.0.1:8787/api/posts/6b329933-aa81-4459-a627-9415e28cdb6b
+Content-Type: application/json
+Authorization: Basic lyh:liuyuhe
